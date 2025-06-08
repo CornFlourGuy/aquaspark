@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AquaSpark - Amazon Replica</title>
+<style>
+  /* Reset and base styles */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #3a2e2e;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  /* Header */
+  header {
+    background-color: #ff6f3c;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .search-bar {
+    flex: 1;
+    display: flex;
+  }
+  .search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+  }
+  .search-bar button {
+    background-color: #ff914d;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  .search-bar button:hover {
+    background-color: #e67333;
+  }
+  nav {
+    margin-left: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #ffb38f;
+    color: #3a2e2e;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #ff8a4d;
+    color: white;
+  }
+  /* Main content */
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  .banner {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(255,111,60,0.3);
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+    gap: 20px;
+  }
+  .product-card {
+    background-color: #fff1e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(255,111,60,0.3);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    box-shadow: 0 6px 12px rgba(255,111,60,0.6);
+  }
+  .product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #5a3e36;
+  }
+  .product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #d35400;
+    margin-bottom: 10px;
+  }
+  .product-rating {
+    color: #f39c12;
+    margin-bottom: 10px;
+  }
+  .btn-add-cart {
+    background-color: #ff6f3c;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-add-cart:hover {
+    background-color: #e65c2a;
+  }
+  /* Footer */
+  footer {
+    background-color: #ff6f3c;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" tabindex="0" role="banner" aria-label="AquaSpark Home">AquaSpark</div>
+  <div class="search-bar" role="search">
+    <input type="text" placeholder="Search products..." aria-label="Search products" />
+    <button aria-label="Search">Search</button>
+  </div>
+  <nav aria-label="Primary navigation">
+    <a href="#" tabindex="0">Today's Deals</a>
+    <a href="#" tabindex="0">Customer Service</a>
+    <a href="#" tabindex="0">Gift Cards</a>
+    <a href="#" tabindex="0">Registry</a>
+    <a href="#" tabindex="0">Sell</a>
+  </nav>
+</header>
+<main>
+  <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x.CB432469755.jpg" alt="Amazon Banner" class="banner" />
+  <section class="product-grid" aria-label="Featured products">
+    <article class="product-card" tabindex="0">
+      <img src="https://files.catbox.moe/zdakeb.jpg" alt="Echo Dot 3rd Gen" class="product-image" />
+      <h2 class="product-title">jet r34</h2>
+      <div class="product-price">CD 5 billion</div>
+      <div class="product-rating" aria-label="4.5 out of 5 stars">★★★★☆</div>
+      <button class="btn-add-cart" aria-label="Add Echo Dot to cart">Add to Cart</button>
+    </article>
+    <article class="product-card" tabindex="0">
+      <img src="https://files.catbox.moe/kos8x2.jpg" alt="Fire TV Stick 4K" class="product-image" />
+      <h2 class="product-title">fastest satellite</h2>
+      <div class="product-price">CD 1 billion </div>
+      <div class="product-rating" aria-label="4.7 out of 5 stars">★★★★☆</div>
+      <button class="btn-add-cart" aria-label="Add Fire TV Stick to cart">Add to Cart</button>
+    </article>
+    <article class="product-card" tabindex="0">
+      <img src="https://files.catbox.moe/kqbocr.jpg" alt="Kindle Paperwhite" class="product-image" />
+      <h2 class="product-title">Nuclear ship– 2 nuclear darts</h2>
+      <div class="product-price">CD 20 billion</div>
+      <div class="product-rating" aria-label="4.6 out of 5 stars">★★★★☆</div>
+      <button class="btn-add-cart" aria-label="Add Kindle Paperwhite to cart">Add to Cart</button>
+    </article>
+    <article class="product-card" tabindex="0">
+      <img src="https://files.catbox.moe/3zdolc.jpg" alt="Fire TV Stick 4K" class="product-image" />
+      <h2 class="product-title">nuclear sulo marin</h2>
+      <div class="product-price">CD 10 Trillion</div>
+      <div class="product-rating" aria-label="4.3 out of 5 stars">★★★☆☆</div>
+      <button class="btn-add-cart" aria-label="Add Microwave to cart">Add to Cart</button>
+    </article>
+    <article class="product-card" tabindex="0">
+      <img src="https://files.catbox.moe/pmk97b.jpg" alt="Apple AirPods Pro" class="product-image" />
+      <h2 class="product-title">ship customizable</h2>
+      <div class="product-price">CD 1 billion</div>
+      <div class="product-rating" aria-label="4.8 out of 5 stars">★★★★★</div>
+      <button class="btn-add-cart" aria-label="Add AirPods Pro to cart">Add to Cart</button>
+    </article>
+    <article class="product-card" tabindex="0">
+      <img src="https://files.catbox.moe/r00rj1.jpg" alt="Samsung Galaxy S21" class="product-image" />
+      <h2 class="product-title">Long jet 35</h2>
+      <div class="product-price">CD 1 trillion</div>
+      <div class="product-rating" aria-label="4.7 out of 5 stars">★★★★☆</div>
+      <button class="btn-add-cart" aria-label="Add Samsung Galaxy S21 to cart">Add to Cart</button>
+    </article>
+    <article class="product-card" tabindex="0">
+      <img src="https://files.catbox.moe/dgqdl5.jpg" alt="Instant Pot Duo" class="product-image" />
+      <h2 class="product-title">jet w6 </h2>
+      <div class="product-price">CD 50 billion.</div>
+      <div class="product-rating" aria-label="4.6 out of 5 stars">★★★★☆</div>
+      <button class="btn-add-cart" aria-label="Add Instant Pot Duo to cart">Add to Cart</button>
+    </article>
+    <article class="product-card" tabindex="0">
+      <img src="https://files.catbox.moe/2j6vi5.jpg" alt="Sony WH-1000XM4" class="product-image" />
+      <h2 class="product-title">C800 v8 missile 8 meters range</h2>
+      <div class="product-price">CD 50 trillion.00</div>
+      <div class="product-rating" aria-label="4.7 out of 5 stars">★★★★☆</div>
+      <button class="btn-add-cart" aria-label="Add Sony Headphones to cart">Add to Cart</button>
+    </article>
+  </section>
+</main>
+<footer>
+  &copy; 2024 AquaSpark. All rights reserved.
+</footer>
+<script>
+  // Add to Cart button interaction
+  document.querySelectorAll('.btn-add-cart').forEach(button => {
+    button.addEventListener('click', () => {
+      button.textContent = 'Added!';
+      button.style.backgroundColor = '#d35400';
+      setTimeout(() => {
+        button.textContent = 'Add to Cart';
+        button.style.backgroundColor = '#ff6f3c';
+      }, 1500);
+    });
+  });
+</script>
+</body>
+</html>
